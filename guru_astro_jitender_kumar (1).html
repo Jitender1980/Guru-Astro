@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guru Astro — Kundli, horoscope, love, marriage, career and spiritual astrology information.">
+<title>Guru Astro | ज्योतिष ज्ञान</title>
+<style>
+:root{
+  --bg:#fffaf0; --cream:#f7ecd2; --saffron:#b85c18; --gold:#d6a23a;
+  --brown:#4a2817; --text:#35261e; --white:#fffdf8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Noto Serif Devanagari",serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(74,40,23,.97);color:#fff;padding:14px 0;box-shadow:0 3px 15px #0002}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:bold;color:#ffe2a0}
+.logo span{display:block;font-size:.72rem;color:#f5d8ae;font-weight:normal}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:.95rem;color:#fff7e8}
+nav a:hover{color:#ffd36b}
+.hero{min-height:600px;display:flex;align-items:center;text-align:center;background:
+ radial-gradient(circle at 50% 38%,#ffd97855 0 7%,transparent 8%),
+ radial-gradient(circle at 20% 20%,#d6a23a22 0 2px,transparent 3px),
+ radial-gradient(circle at 80% 30%,#d6a23a22 0 2px,transparent 3px),
+ linear-gradient(135deg,#4a2817,#7b3d19 55%,#3d2116);color:white;position:relative;overflow:hidden}
+.hero:after{content:"ॐ  ✦  ☾  ✧  ॐ";position:absolute;inset:auto 0 35px;text-align:center;color:#f7cf76aa;font-size:2rem;letter-spacing:18px}
+.hero-content{max-width:800px;margin:auto;position:relative;z-index:1}
+.badge{display:inline-block;border:1px solid #f4cd78;padding:6px 15px;border-radius:30px;color:#ffe1a0;margin-bottom:18px}
+h1{font-size:clamp(2.3rem,6vw,4.6rem);line-height:1.15;margin-bottom:18px;color:#ffe0a0}
+.hero p{font-size:1.12rem;max-width:680px;margin:0 auto 28px;color:#fff4dc}
+.btn{display:inline-block;padding:12px 23px;border-radius:30px;background:var(--gold);color:#3e2415;font-weight:bold;margin:5px}
+.btn.alt{background:transparent;border:1px solid #f4cd78;color:#ffe0a0}
+section{padding:75px 0}
+.section-title{text-align:center;color:var(--brown);font-size:2.2rem;margin-bottom:10px}
+.section-sub{text-align:center;max-width:700px;margin:0 auto 35px;color:#6c584a}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid #ead9b9;border-radius:18px;padding:27px;box-shadow:0 8px 25px #4a281710;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #4a281722}
+.icon{font-size:2rem;margin-bottom:10px}
+.card h3{color:var(--saffron);margin-bottom:7px}
+.about{background:var(--cream)}
+.about-box{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.mantra{font-size:2rem;color:var(--saffron);text-align:center;padding:35px;border:1px solid #d9b66d;border-radius:20px;background:#fff8e8}
+.horoscope{background:#fff}
+.zodiac{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.zodiac .card{text-align:center;padding:20px}
+.zodiac strong{display:block;color:var(--brown)}
+.notice{margin-top:25px;padding:15px 18px;border-left:4px solid var(--gold);background:#fff8e9;color:#695342;border-radius:8px}
+footer{background:#3b2115;color:#f8e8c9;padding:35px 0;text-align:center}
+footer small{color:#d9c3a4}
+@media(max-width:800px){
+  nav{display:none}.grid{grid-template-columns:1fr 1fr}.about-box{grid-template-columns:1fr}.zodiac{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{min-height:560px}section{padding:55px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">ॐ Guru Astro <span>ज्योतिष • आध्यात्म • ज्ञान</span></a>
+    <nav>
+      <a href="#services">सेवाएँ</a>
+      <a href="#about">ज्योतिष ज्ञान</a>
+      <a href="#horoscope">राशिफल</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="badge">✦ वैदिक ज्योतिष एवं आध्यात्मिक ज्ञान ✦</div>
+<p style="color:#ffe0a0;font-size:1.15rem;margin-bottom:8px">ज्योतिषाचार्य: <strong>Jitender Kumar</strong></p>
+    <h1>अपने सितारों को समझें</h1>
+    <p>कुंडली, राशिफल, प्रेम, विवाह, करियर और जीवन से जुड़े ज्योतिषीय विषयों की सरल एवं आध्यात्मिक जानकारी एक ही स्थान पर।</p>
+    <a class="btn" href="#services">ज्योतिष सेवाएँ देखें</a>
+    <a class="btn alt" href="#about">और जानें</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">हमारी ज्योतिष सेवाएँ</h2>
+    <p class="section-sub">जीवन के अलग-अलग पहलुओं से जुड़े ज्योतिषीय विषयों को समझने के लिए जानकारी और मार्गदर्शन।</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🪐</div><h3>कुंडली एवं जन्म कुंडली</h3><p>ग्रहों, राशियों और भावों की मूलभूत जानकारी तथा जन्म कुंडली को समझने की दिशा।</p></article>
+      <article class="card"><div class="icon">❤️</div><h3>प्रेम एवं संबंध</h3><p>रिश्तों, अनुकूलता और प्रेम जीवन से जुड़े पारंपरिक ज्योतिषीय विचारों की जानकारी।</p></article>
+      <article class="card"><div class="icon">💍</div><h3>विवाह ज्योतिष</h3><p>विवाह मिलान, गुण मिलान और विवाह से जुड़े प्रमुख ज्योतिषीय सिद्धांतों का परिचय।</p></article>
+      <article class="card"><div class="icon">💼</div><h3>करियर एवं धन</h3><p>करियर, व्यवसाय और वित्त से जुड़े ज्योतिषीय संकेतों की सामान्य जानकारी।</p></article>
+      <article class="card"><div class="icon">🌙</div><h3>दैनिक एवं मासिक राशिफल</h3><p>राशियों के आधार पर सामान्य दैनिक, साप्ताहिक और मासिक ज्योतिषीय जानकारी।</p></article>
+      <article class="card"><div class="icon">🕉️</div><h3>आध्यात्मिक ज्योतिष</h3><p>मंत्र, ग्रहों की प्रतीकात्मकता और आत्मचिंतन से जुड़े पारंपरिक आध्यात्मिक विषय।</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-box">
+    <div>
+      <h2 class="section-title" style="text-align:left">ज्योतिष क्या कहता है?</h2>
+      <p>वैदिक ज्योतिष भारतीय परंपरा में ग्रहों, राशियों, नक्षत्रों और जन्म समय के आधार पर जीवन के विभिन्न पहलुओं को समझने का एक पारंपरिक माध्यम है।</p>
+      <p style="margin-top:12px">यह वेबसाइट ज्योतिषीय ज्ञान को सरल भाषा में प्रस्तुत करने के उद्देश्य से बनाई गई है, ताकि आप विभिन्न अवधारणाओं को समझ सकें और अपने आत्मचिंतन में उनका उपयोग कर सकें।</p>
+      <div class="notice">नोट: ज्योतिषीय जानकारी को निश्चित भविष्यवाणी या पेशेवर चिकित्सा, कानूनी या वित्तीय सलाह का विकल्प न मानें।</div>
+    </div>
+    <div class="mantra">ॐ<br><small>“सर्वे भवन्तु सुखिनः”</small></div>
+  </div>
+</section>
+
+<section class="horoscope" id="horoscope">
+  <div class="container">
+    <h2 class="section-title">12 राशियाँ</h2>
+    <p class="section-sub">अपनी राशि चुनकर उससे जुड़े ज्योतिषीय विषयों के बारे में जानें।</p>
+    <div class="zodiac">
+      <div class="card">♈<strong>मेष</strong><small>Aries</small></div>
+      <div class="card">♉<strong>वृषभ</strong><small>Taurus</small></div>
+      <div class="card">♊<strong>मिथुन</strong><small>Gemini</small></div>
+      <div class="card">♋<strong>कर्क</strong><small>Cancer</small></div>
+      <div class="card">♌<strong>सिंह</strong><small>Leo</small></div>
+      <div class="card">♍<strong>कन्या</strong><small>Virgo</small></div>
+      <div class="card">♎<strong>तुला</strong><small>Libra</small></div>
+      <div class="card">♏<strong>वृश्चिक</strong><small>Scorpio</small></div>
+      <div class="card">♐<strong>धनु</strong><small>Sagittarius</small></div>
+      <div class="card">♑<strong>मकर</strong><small>Capricorn</small></div>
+      <div class="card">♒<strong>कुंभ</strong><small>Aquarius</small></div>
+      <div class="card">♓<strong>मीन</strong><small>Pisces</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--cream)">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title">ज्योतिष ज्ञान की यात्रा शुरू करें</h2>
+    <p class="section-sub">यहाँ आगे हम आपकी वेबसाइट के लिए अलग-अलग राशियों, ग्रहों, कुंडली और ज्योतिषीय विषयों के information pages जोड़ सकते हैं।</p>
+    <a class="btn" href="https://wa.me/919312452322" target="_blank" rel="noopener">📱 WhatsApp पर संपर्क करें</a>
+<a class="btn alt" href="#home" style="border-color:var(--saffron);color:var(--brown)">ऊपर जाएँ</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>ॐ Guru Astro</p>
+    <small>पारंपरिक ज्योतिषीय ज्ञान • आध्यात्मिक चिंतन • जानकारी</small>
+    <br><small>© 2026 Guru Astro • Jitender Kumar</small>
+  </div>
+</footer>
+
+<a href="https://wa.me/919312452322" target="_blank" rel="noopener"
+   aria-label="WhatsApp पर संपर्क करें"
+   style="position:fixed;right:18px;bottom:18px;z-index:20;background:#25d366;color:white;
+   width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+   font-family:Arial,sans-serif;font-size:27px;box-shadow:0 5px 18px #0004">☏</a>
+
+</body>
+</html>
